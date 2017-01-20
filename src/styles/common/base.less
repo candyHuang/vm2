@@ -1,0 +1,39 @@
+@import "./normalize.css";
+@import "./variables.less";
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: @fontFamily;
+  line-height: 1.5;
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+  background-color: @backgroundColor;
+  color: @textColor;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: @accentColor;
+  user-select: none;
+  -webkit-user-select: none;
+}

@@ -1,0 +1,28 @@
+@import "./colors.less";
+
+@fontFamily: Roboto, 'Noto Sans', sans-serif;
+
+// primary and accent
+@primaryColor: @lightBlue;  // 主色
+@accentColor: @lightGreen;
+
+
+
+// textColor or borderColor
+@textColor: @darkBlack;
+@secondaryTextColor: fade(@fullBlack, 54%);
+@alternateTextColor: @white;
+@borderColor: fade(@fullBlack, 12%);
+@disabledColor: fade(@fullBlack, 38%);
+
+
+// background
+@backgroundColor: @white;
+
+// animate
+@easeOutDuration: .4s;
+@easeOutFunction: cubic-bezier(.25, .8, .25, 1);
+@easeOut: all @easeOutDuration @easeOutFunction;
+@easeInOutDuration: .5s;
+@easeInOutFunction: cubic-bezier(.35, 0, .25, 1);
+@easeInOut: all @easeInOutDuration @easeInOutFunction;
